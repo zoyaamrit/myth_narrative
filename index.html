@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mythical Safari</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <div id="landing" class="world">
+        <div> 
+            <h2> Welcome to the Mythical Time Safari. </h2>
+            <h2> Travel back to see creatures you thought were imaginary. </h2>
+            <h2> We'll take you there, </h2>
+            <h2> but you must bring back evidence.</h2>
+        </div>
+
+        <div id="startButton">
+            <button class="choice floating" onClick="displayCanvas()">→</button>  
+            <div class="hide">
+                <h3>begin</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="scenes">
+        <div id="choice1">
+            <button class="choice floating"><<</button>  
+            <div class="hide">
+                <h3 id="hidden_1">leave</h3>
+            </div>
+        </div>
+
+        <div id="choice2">
+            <button class="choice floating_2">>></button>  
+            <div class="hide">
+                <h3 id="hidden_2">move closer</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="exit1" class="world">
+        <div> 
+            <h1>In your hurry to leave, you dropped your camera</h1>
+            <h1>Left with a strange, advanced artifact, </h1>
+            <h1>the world became confident in the belief of alien existence. </h1>
+            <h1>Temples are shaped like UFOs and teams of scientists</h1>
+            <h1>are devoted to contacting alien life. </h1>
+            <br>
+            <h1>The future camera is infinitely more advanced.</h1>
+        </div>
+    </div>
+
+    <div id="exit2" class="world">
+        <div> 
+           <h1>You carry the unicorn back to the future.</h1>
+           <h1>It is discovered that the medevial myths about the medicinal</h1>
+           <h1>properties of the unicorn horn were true. </h1>
+           <h1>Alternate remedies take precedence over research </h1>
+           <h1>The forests and ecosystems are now thoroughly mapped and detailed</h1>
+           <h1>More research is devoted to studying the ocean than the stars</h1>
+           <h1>in the hope of encountering other mystical animals.</h1>
+
+        </div>
+    </div>
+
+
+
+    <div id="exit3" class="world">
+        <div> 
+            <h1>The existence of the pheonix is irrefutable now. </h1>
+            <h1>There is no a global reconsideration of the concept of magic and science. </h1>
+            <h1> Religions, ancient texts, and folklore are reinterpreted as concrete truths,</h1>
+            <h1>and the societal structure shatters.</h1>
+        </div>
+    </div>
+
+    <div id="exit4" class="world">
+        <div> 
+            <h1>With the picture of the unicorn and pheonix, reality shifts. </h1>
+            <h1>There's a massive ripple through culture, science and mythology.</h1>
+            <h1> Ancient myths gain credibility and scientific paradigms shift,</h1>
+            <h1>since long-established understandings of biology are challenged.</h1>
+            <h1>They are both  now hunted animals, </h1>
+            <h1> sought out by people looking to make a fortune off the fairytale. </h1>
+        </div>
+    </div>
+
+
+
+
+    <div id="p5_loading" class="loadingclass world">
+       time travelling
+    </div>
+
+    
+
+    <script rel="preload" src="script.js"></script>
+</body>
+</html>

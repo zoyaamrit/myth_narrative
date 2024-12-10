@@ -1,0 +1,164 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h3 {
+    font-weight: 250;
+    font-style: normal;
+    font-stretch: expanded;
+    font-size: 20px;
+    padding: 5%;
+    text-align: center;
+
+}
+
+.world {
+    display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;  
+  text-align: center;
+  height: 100vh;
+    background-color: black;
+
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: expanded;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    color: azure;
+    animation: type 4s forwards;
+
+}
+
+h1 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: expanded;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    color: azure;
+    animation: type 4s forwards;
+
+}
+
+button {
+    width: 50px; 
+    height: 50px; 
+    background-color: azure;
+    opacity: 40%;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+
+    
+}
+
+#choice2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+#choice1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+#startButton {
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+}
+
+#scenes  {
+    display: none;
+}
+
+#exit1  {
+    display: none;
+}
+
+#exit2  {
+    display: none;
+}
+#exit3  {
+    display: none;
+}
+
+#exit4  {
+    display: none;
+}
+.hide {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    background-color: azure;
+    border-radius: 50px;
+    width: 100px;
+}
+
+button:hover {
+    transform: scale(0.9);
+    opacity: 60%;
+}
+      
+.choice:hover + .hide {
+    opacity: 80%;
+    animation: none;
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating_2 {
+    animation: float 4s 1s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes type {
+    to {
+        opacity: 1;
+    }
+  }
